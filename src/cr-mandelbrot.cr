@@ -3,6 +3,8 @@ require "stumpy_png"
 module Mandelbrot
   VERSION = "0.1.0"
 
+  extend self
+
   record Complex, x : Float64, y : Float64
 
   def escapes?(p)
